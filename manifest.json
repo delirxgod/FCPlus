@@ -1,0 +1,40 @@
+{
+  "name": "FCPlus",
+  "description": "Auto-accept when a match is found, themes and more." ,
+  "version": "0.0.1.1",
+  "icons": {
+    "16": "images/ic16.png",
+    "32": "images/ic32.png",
+    "48": "images/ic48.png",
+    "128": "images/ic128.png"
+  },
+  "author": "D3lir",
+  "manifest_version": 3,
+  "permissions" : [
+    "activeTab",
+    "scripting"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+},
+  "action": { 
+    "default_popup": "popup.html",
+    "default_title": "FCPLUS"
+},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://cs.fastcup.net/*",
+        "*://csgo.fastcup.net/*",
+        "*://google.com/*"
+      ],
+      "js": [
+        "res/bundle.js"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
