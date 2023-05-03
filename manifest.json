@@ -17,10 +17,11 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
 },
-  "action": { 
-    "default_popup": "popup.html",
+
+  "action": {
     "default_title": "FCPLUS"
 },
+
   "content_scripts": [
     {
       "matches": [
