@@ -20,10 +20,15 @@ function getUserInfo() {
 
 function autoaccept() { 
     $(document).ready(function(){
-        let temp = document.querySelectorAll('.J8yUlf .rVPnYX .JSdUlp');
-            // console.log(temp[0].innerText.toLowerCase());
-                 if (temp[0].innerText.toLowerCase() == 'ready') { 
-                    $ ('.J8yUlf .rVPnYX .JSdUlp').click(); }})};
+        let temp = document.querySelectorAll('.J8yUlf');
+            console.log(temp);
+                for (let i = 0 ; i < temp.length ; i++) {
+                    if ( temp[i].innerText.toLowerCase() == 'ready' ) { 
+                        temp[i].click();
+                    } else if ( temp[i].innerText.toLowerCase() == 'готов' ) {
+                        temp[i].click();
+                    }
+                 }})};
 
 setInterval(() => {
     autoaccept();
