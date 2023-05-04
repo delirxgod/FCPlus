@@ -1,5 +1,10 @@
 ![FCPLUS](https://raw.githubusercontent.com/delirxgod/FCPlus/master/images/preview.png)
 
+[1. What is?](https://github.com/delirxgod/FCPlus#what-is)
+[2. Updates](https://github.com/delirxgod/FCPlus#what-is)
+[3. Why?](https://github.com/delirxgod/FCPlus#what-is)
+[4. How to install?](https://github.com/delirxgod/FCPlus#what-is)
+
 ## What is?
 ----------------------------------------
 This is an extension for the FASTCUP.NET project created to change the color palette (theme). Also auto-acceptance of the match and much more.
