@@ -21,11 +21,10 @@ function getUserInfo() {
 function autoaccept() { 
     $(document).ready(function(){
         let temp = document.querySelectorAll('.J8yUlf');
-            console.log(temp);
                 for (let i = 0 ; i < temp.length ; i++) {
                     if ( temp[i].innerText.toLowerCase() == 'ready' ) { 
                         temp[i].click();
-                    } else if ( temp[i].innerText.toLowerCase() == 'готов' ) {
+                    } else if ( temp[i].innerText.toLowerCase() == 'готов к игре' ) {
                         temp[i].click();
                     }
                  }})};
