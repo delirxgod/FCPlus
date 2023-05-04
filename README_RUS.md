@@ -4,7 +4,7 @@
 > [Обновления](https://github.com/delirxgod/FCPlus#what-is) -
 > [Почему?](https://github.com/delirxgod/FCPlus#what-is) -
 > [Как установить?](https://github.com/delirxgod/FCPlus#what-is)
->  Language: [English](https://raw.githubusercontent.com/delirxgod/FCPlus/master/README.md) / Russian
+>  Language: [English](https://github.com/delirxgod/FCPlus) / Russian
 
 
 ## Что это?
