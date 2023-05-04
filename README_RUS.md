@@ -1,9 +1,9 @@
 ![FCPLUS](https://raw.githubusercontent.com/delirxgod/FCPlus/master/images/preview.png)
 
-> [Что это?](https://github.com/delirxgod/FCPlus#what-is) -
-> [Обновления](https://github.com/delirxgod/FCPlus#what-is) -
-> [Почему?](https://github.com/delirxgod/FCPlus#what-is) -
-> [Как установить?](https://github.com/delirxgod/FCPlus#what-is)
+> [Что это?](https://github.com/delirxgod/FCPlus/blob/master/README_RUS.md#%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE) -
+> [Обновления](https://github.com/delirxgod/FCPlus/blob/master/README_RUS.md#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-skull) -
+> [Почему?](https://github.com/delirxgod/FCPlus/blob/master/README_RUS.md#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-woozy_face) -
+> [Как установить?](https://github.com/delirxgod/FCPlus/blob/master/README_RUS.md#%D0%BA%D0%B0%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-hear_no_evil)
 >  Language: [English](https://github.com/delirxgod/FCPlus) / Russian
 
 
