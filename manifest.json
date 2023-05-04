@@ -26,8 +26,7 @@
     {
       "matches": [
         "*://cs.fastcup.net/*",
-        "*://csgo.fastcup.net/*",
-        "*://google.com/*"
+        "*://csgo.fastcup.net/*"
       ],
       "js": [
         "res/bundle.js"
