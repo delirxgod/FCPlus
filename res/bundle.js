@@ -2,22 +2,28 @@
 FC_BUTTON_ACCEPT = localStorage.getItem('BTN_ACCEPT');
 
 if(FC_BUTTON_ACCEPT === null) {
-    localStorage.setItem('BTN_ACCEPT', "on");
+    localStorage.setItem('BTN_ACCEPT', 'on');
 }
 
-
-
 function buttonsHTML() {
-    let buttonsCode = document.querySelectorAll('.m4tQCU');
 
-    buttonsCode[0].innerHTML = '<ul class="B2b9Lj"><li class="j0yYJr niqoHv"><a class="AFLXSF" href="/"><span>Главная</span></a></li><li class="j0yYJr"><a class="AFLXSF" href="/matches"><span>Матчи</span></a></li><li class="j0yYJr"><div class="IbDbLH"><button type="button" class="WA17Fa"><div class="GCQCcK"><span>Соревнования</span></div></button><div class="Dt_KDD"><a class="mFXxRZ" href="/leagues"><span>Лиги</span></a><a class="mFXxRZ" href="/tournaments"><span>Турниры</span></a></div></div></li><li class="j0yYJr"><div class="IbDbLH"><button type="button" class="WA17Fa"><div class="GCQCcK"><span>Топы</span></div></button><div class="Dt_KDD"><a class="mFXxRZ" href="/users"><span>Игроки</span></a><a class="mFXxRZ" href="/teams"><span>Команды</span></a></div></div></li><li class="j0yYJr"><a class="AFLXSF" href="/streams"><span>Стримы</span></a></li><li class="j0yYJr"><a class="AFLXSF" href="/servers"><span>Серверы</span></a></li><li class="j0yYJr"><a class="AFLXSF" href="https://forums.fastcup.net" target="_blank" rel="noopener noreferrer"><span>Форум</span></a></li><li class="j0yYJr"><a class="AFLXSF" href="https://gameguard.ac" target="_blank" rel="noopener noreferrer"><span>Античит</span></a></li><li class="j0yYJr"><div class="IbDbLH"><button type="button" class="WA17Fa"><div class="GCQCcK"><span>Помощь</span></div></button><div class="Dt_KDD"><a class="mFXxRZ" href="/faq">FAQ</a><a class="mFXxRZ" href="/rules"><span>Правила</span></a><button class="mFXxRZ"><div class="GCQCcK"><span>Поддержка</span></div></button></div></div></li><div class="btn"><button class="tog AC btn-turn-on">Auto-accept</button></div></li></div></a></li></ul>'
-
-    let btnAC = document.querySelectorAll('.AC');
-    if (FC_BUTTON_ACCEPT === "on") {
-        btnAC[0].innerText = "Auto-Accept ON";
+    // BUTTON
+    let buttonsCode = document.querySelectorAll('.kI42CN');
+    let btn = document.createElement("BUTTON");
+    btn.className = 'AC ' + 'btn-turn-on';
+    if (FC_BUTTON_ACCEPT === 'on') {
+        btn.innerText = 'Auto-Accept ON';
+        btn.classList.add('btn-turn-on');
+        btn.classList.remove('btn-turn-off');
     } else {
-        btnAC[0].innerText = "Auto-Accept OFF";
+        btn.innerText = 'Auto-Accept OFF';
+        btn.classList.add('btn-turn-off');
+        btn.classList.remove('btn-turn-on');
     }
+    buttonsCode[0].appendChild(btn);
+
+    // SWITCH
+    let btnAC = document.querySelectorAll('.AC');
     btnAC[0].addEventListener('click', function buttonSwitchAC() {
         let tempAC = btnAC[0];
         if(!tempAC.classList.contains('btn-turn-off')) {
@@ -26,18 +32,19 @@ function buttonsHTML() {
             localStorage.setItem('BTN_ACCEPT', 'off');
             btnAC[0].innerText = "Auto-Accept OFF";
             btnAC[0] = tempAC;
+
         }
         else {
             tempAC.classList.remove('btn-turn-off');
             tempAC.classList.add('btn-turn-on');
             localStorage.setItem('BTN_ACCEPT', 'on');
-            btnAC[0].innerText = "Auto-Accept ON";
+            btnAC[0].innerText = 'Auto-Accept ON';
             btnAC[0] = tempAC;
         }
     });
 }
 
-function autoaccept() {
+function autoAccept() {
     FC_BUTTON_ACCEPT = localStorage.getItem('BTN_ACCEPT');
     if(FC_BUTTON_ACCEPT === 'on') {
         let temp = document.querySelectorAll('.J8yUlf');
@@ -56,5 +63,5 @@ setTimeout(() => {
 }, 300)
 
 setInterval(() => {
-    autoaccept();
+    autoAccept();
 }, 4000)
