@@ -5,7 +5,6 @@ html {
 
 :root[data-dark] {
     --body-bg: #16161a !important;
-    --block-bg: #16161a !important;
     --block-footer-bg: #06040a !important;
     --color-border: #8f7bd1 !important;
     --color-base-gamma: #72757e !important;
@@ -31,6 +30,10 @@ html {
 
 .V1Ackx {
     color: black !important;
+}
+
+.y0lCUs {
+    color: inherit !important;
 }
 
 .DSxU5z path {
@@ -167,7 +170,7 @@ html {
 .OSLzEm {
     background-color: var(--block-footer-bg) !important;
     border: 2px solid var(--body-color) !important;
-    box-shadow: 0px 0px 25px rgb(127,90,240,0.15);
+    box-shadow: 0 0 25px rgb(127,90,240,0.15);
 }
 
 .F6TYJ4:hover {
@@ -176,21 +179,11 @@ html {
 
 .mI9dZ9, .WH9ilP, .mFXxRZ {
     background-color: var(--sidebar-bg) !important;
-    box-shadow: 0px 0px 25px rgb(127,90,240,0.15);
+    box-shadow: 0 0 25px rgb(127,90,240,0.15);
 }
 
 .TESOR7 {
     border: 2px solid var(--block-footer-bg);
-}
-
-.lmdGbU::after {
-    content: attr(data-value);
-    color: black;
-    font-size: 12px;
-    background-color: var(--body-color);
-    border-radius: 12px;
-    margin-left: 6px;
-    padding: attr(data-something);
 }
 
 .QnvfZ_ {
@@ -210,3 +203,24 @@ html {
 .egSXkH svg g g rect:nth-child(-n + 3) {
     fill: var(--block-footer-bg) !important;
 }
+
+
+/* STYLE ADDED BUTTON */
+.B2b9Lj .btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.B2b9Lj .tog {
+    padding: 7px 15px;
+    background-color: var(--color-border);
+    color: black !important;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
