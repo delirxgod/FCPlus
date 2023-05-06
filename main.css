@@ -14,6 +14,8 @@ html {
     --color-brand: #8f7bd1 !important;
     --btn-quaternary-bg: #8f7bd1 !important;
     --block-bg: #06040a !important;
+    --shadow-color: #8f7bd122 !important;
+    --block-header-bg: #8f7bd133 !important;
 }
 
 
@@ -77,7 +79,7 @@ html {
 }
 
 .intercom-lightweight-app-launcher {
-    background: var(--body-color) !important; 
+    background: var(--body-color) !important;
 }
 
 .t3hWp0:hover {
@@ -126,9 +128,9 @@ html {
 }
 
 
-.VKNqWV {
-    color: #ff7d7d !important;
-}
+/*.VKNqWV {*/
+/*    color: #ff7d7d !important;*/
+/*}*/
 
 .dBOjw2 path {
     fill: var(--body-color);
@@ -171,7 +173,7 @@ html {
 .OSLzEm {
     background-color: var(--block-footer-bg) !important;
     border: 2px solid var(--body-color) !important;
-    box-shadow: 0 0 25px rgb(127,90,240,0.15);
+    box-shadow: 0 1px 24px var(--shadow-color);
 }
 
 .F6TYJ4:hover {
@@ -180,7 +182,7 @@ html {
 
 .mI9dZ9, .WH9ilP, .mFXxRZ {
     background-color: var(--sidebar-bg) !important;
-    box-shadow: 0 0 25px rgb(127,90,240,0.15);
+    box-shadow: 0 1px 24px var(--shadow-color);
 }
 
 .TESOR7 {
@@ -192,12 +194,12 @@ html {
     margin-top: 40px;
 }
 
-.CPFC {
+.CPC {
     margin-top: 22px;
     margin-left: 5px;
 }
 
-#colorPicker {
+.m4tQCU #colorPicker {
     border: none;
     border-radius: 6px;
 }

@@ -1,7 +1,7 @@
 {
   "name": "FCPlus",
   "description": "Auto-accept when a match is found, themes and more. //  github.com/delirxgod/FCPlus" ,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "icons": {
     "16": "images/ic16.png",
     "32": "images/ic32.png",

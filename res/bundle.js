@@ -1,5 +1,5 @@
-FC_BUTTON_ACCEPT = localStorage.getItem('BTN_ACCEPT');
-FC_THEME = localStorage.getItem('COLOR')
+let FC_BUTTON_ACCEPT = localStorage.getItem('BTN_ACCEPT');
+let FC_THEME = localStorage.getItem('COLOR')
 
 if(FC_THEME === null) {
     localStorage.setItem('COLOR', '#8f7bd1');
@@ -10,7 +10,6 @@ if(FC_BUTTON_ACCEPT === null) {
 }
 
 function buttonsHTML() {
-
     let buttonsCode = document.querySelectorAll('.kI42CN');
 
     // COLOR CHANGE
@@ -19,10 +18,10 @@ function buttonsHTML() {
     colorChange.type = 'color';
     colorChange.id ='colorPicker';
     colorChange.name = 'colorPicker';
-    colorChange.classList.add('CPFC');
+    colorChange.classList.add('CPC');
     let textColorChange = document.createElement('div');
     textColorChange.innerText = 'Color: '
-    textColorChange.classList.add('CPFC');
+    textColorChange.classList.add('CPC');
 
     // BUTTON
 
@@ -70,6 +69,8 @@ function changeColor () {
     document.body.style.setProperty('--body-color', color);
     document.body.style.setProperty('--color-brand', color);
     document.body.style.setProperty('--btn-quaternary-bg', color);
+    document.body.style.setProperty('--shadow-color', color + '22');
+    document.body.style.setProperty('--block-header-bg', color + '13');
 
     localStorage.setItem('COLOR', color);
 
@@ -88,18 +89,16 @@ function autoAccept() {
         }
     }
 }
-
-
 /* INTERVALS AND TIMEOUTS */
 
 
 setTimeout(() => {
     buttonsHTML();
-}, 100)
+}, 300)
 
 setInterval(() => {
-        changeColor();
-    }, 100)
+    changeColor();
+    }, 310)
 
 setInterval(() => {
     autoAccept();
