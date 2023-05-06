@@ -16,9 +16,15 @@ html {
     --block-bg: #06040a !important;
     --shadow-color: #8f7bd122 !important;
     --block-header-bg: #8f7bd133 !important;
+    --btn-primary-bg: #8f7bd1 !important;
+    --btn-primary-bg-hover: #8f7bd165 !important;
 }
 
 
+
+.QnvfZ_, .Klmd9Q, .Uj0UN3, .V1ubny {
+    color: black !important;
+}
 
 .kPjksb {
     display: block;

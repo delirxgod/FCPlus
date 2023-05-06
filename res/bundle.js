@@ -71,6 +71,8 @@ function changeColor () {
     document.body.style.setProperty('--btn-quaternary-bg', color);
     document.body.style.setProperty('--shadow-color', color + '22');
     document.body.style.setProperty('--block-header-bg', color + '13');
+    document.body.style.setProperty('--btn-primary-bg', color);
+    document.body.style.setProperty('--btn-primary-bg-hover', color + '64');
 
     localStorage.setItem('COLOR', color);
 
