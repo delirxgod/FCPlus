@@ -73,6 +73,9 @@ function changeColor () {
     document.body.style.setProperty('--block-header-bg', color + '13');
     document.body.style.setProperty('--btn-primary-bg', color);
     document.body.style.setProperty('--btn-primary-bg-hover', color + '64');
+    document.body.style.setProperty('--btn-flush-filters-bg', color + '22');
+    document.body.style.setProperty('--nav-link-bg', color + '22');
+    document.body.style.setProperty('--btn-flush-filters-bg-hover', color + '05');
 
     localStorage.setItem('COLOR', color);
 

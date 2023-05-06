@@ -18,14 +18,20 @@ html {
     --block-header-bg: #8f7bd133 !important;
     --btn-primary-bg: #8f7bd1 !important;
     --btn-primary-bg-hover: #8f7bd165 !important;
+    --btn-flush-filters-bg: #8f7bd122 !important;
+    --nav-link-bg: #8f7bd122 !important;
 }
 
 
 
-.QnvfZ_, .Klmd9Q, .Uj0UN3, .V1ubny {
+.QnvfZ_, .Klmd9Q, .Uj0UN3, .V1ubny, .zEIIJv, .TTHxkU, .intercom-lightweight-app-launcher-icon {
     color: black !important;
-}
+    fill: black !important;
 
+}
+.sYtFrb {
+    stroke: #0000 !important;
+}
 .kPjksb {
     display: block;
     overflow: visible;
