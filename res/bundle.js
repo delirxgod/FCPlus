@@ -1,5 +1,9 @@
-//localStorage.getItem('BTN_ACCEPT', "on");
 FC_BUTTON_ACCEPT = localStorage.getItem('BTN_ACCEPT');
+FC_THEME = localStorage.getItem('COLOR')
+
+if(FC_THEME === null) {
+    localStorage.setItem('COLOR', '#8f7bd1');
+}
 
 if(FC_BUTTON_ACCEPT === null) {
     localStorage.setItem('BTN_ACCEPT', 'on');
@@ -7,8 +11,21 @@ if(FC_BUTTON_ACCEPT === null) {
 
 function buttonsHTML() {
 
-    // BUTTON
     let buttonsCode = document.querySelectorAll('.kI42CN');
+
+    // COLOR CHANGE
+
+    let colorChange = document.createElement('INPUT')
+    colorChange.type = 'color';
+    colorChange.id ='colorPicker';
+    colorChange.name = 'colorPicker';
+    colorChange.classList.add('CPFC');
+    let textColorChange = document.createElement('div');
+    textColorChange.innerText = 'Color: '
+    textColorChange.classList.add('CPFC');
+
+    // BUTTON
+
     let btn = document.createElement("BUTTON");
     btn.className = 'AC ' + 'btn-turn-on';
     if (FC_BUTTON_ACCEPT === 'on') {
@@ -20,7 +37,12 @@ function buttonsHTML() {
         btn.classList.add('btn-turn-off');
         btn.classList.remove('btn-turn-on');
     }
+
     buttonsCode[0].appendChild(btn);
+    buttonsCode[0].appendChild(textColorChange);
+    buttonsCode[0].appendChild(colorChange);
+
+    document.querySelectorAll('#colorPicker')[0].value = localStorage.getItem('COLOR');
 
     // SWITCH
     let btnAC = document.querySelectorAll('.AC');
@@ -30,11 +52,9 @@ function buttonsHTML() {
             tempAC.classList.remove('btn-turn-on');
             tempAC.classList.add('btn-turn-off');
             localStorage.setItem('BTN_ACCEPT', 'off');
-            btnAC[0].innerText = "Auto-Accept OFF";
+            btnAC[0].innerText = 'Auto-Accept OFF';
             btnAC[0] = tempAC;
-
-        }
-        else {
+        } else {
             tempAC.classList.remove('btn-turn-off');
             tempAC.classList.add('btn-turn-on');
             localStorage.setItem('BTN_ACCEPT', 'on');
@@ -42,6 +62,17 @@ function buttonsHTML() {
             btnAC[0] = tempAC;
         }
     });
+}
+
+function changeColor () {
+    let color = document.querySelectorAll('#colorPicker')[0].value;
+    document.body.style.setProperty('--color-border', color);
+    document.body.style.setProperty('--body-color', color);
+    document.body.style.setProperty('--color-brand', color);
+    document.body.style.setProperty('--btn-quaternary-bg', color);
+
+    localStorage.setItem('COLOR', color);
+
 }
 
 function autoAccept() {
@@ -58,9 +89,17 @@ function autoAccept() {
     }
 }
 
+
+/* INTERVALS AND TIMEOUTS */
+
+
 setTimeout(() => {
     buttonsHTML();
-}, 300)
+}, 100)
+
+setInterval(() => {
+        changeColor();
+    }, 100)
 
 setInterval(() => {
     autoAccept();

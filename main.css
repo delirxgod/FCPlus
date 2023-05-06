@@ -16,6 +16,8 @@ html {
     --block-bg: #06040a !important;
 }
 
+
+
 .kPjksb {
     display: block;
     overflow: visible;
@@ -192,7 +194,18 @@ html {
 }
 
 .QnvfZ_ {
+    background-color: var(--body-color) !important;
     margin-top: 40px;
+}
+
+.CPFC {
+    margin-top: 22px;
+    margin-left: 5px;
+}
+
+#colorPicker {
+    border: none;
+    border-radius: 6px;
 }
 
 .JRJyqg {
