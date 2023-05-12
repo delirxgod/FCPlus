@@ -9,6 +9,7 @@
 ## What is?
 ----------------------------------------
 This is an extension for the FASTCUP.NET project created to change the color palette (theme). Also auto-acceptance of the match and much more.
+![YEA](https://sun9-44.userapi.com/impg/PHgG4Im_A5uVpisrlODhWS9p-1saunA1Trcsqw/EIU7pdKZ-mM.jpg?size=1914x939&quality=96&sign=9007e7c0c0d03b5d3e316d322a8ad18c&type=album)
 
 ## Updates :skull:
 ----------------------------------------
