@@ -23,7 +23,7 @@ Having played a certain number of matches, I was a little tired of the color pal
 ----------------------------------------
 To install the extension, you need to:
 1. Download the latest release from the [repository](https://github.com/delirxgod/FCPlus/releases).
-2. Open browser extensions (URL:  `chrome ://extensions/` ).
+2. Open browser extensions (URL:  `chrome://extensions/` ).
 3. Unpack the file and drag it into the browser window. Then click the \*add\* button.
 
 Have fun. Is there a question or an idea? Write to [me](https://vk.com/d3lir)
